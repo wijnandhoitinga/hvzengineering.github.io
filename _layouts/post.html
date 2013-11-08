@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<p class="nav">
+{% if page.previous %}<a href="{{ page.previous.url }}">older</a>{% else %}older{% endif %}
+&bull;
+{{ page.date | date_to_string }}
+&bull;
+{% if page.next %}<a href="{{ page.next.url }}">newer</a>{% else %}newer{% endif %}
+&bull;
+{% if page.url != site.posts.first.url %}<a href="{{ site.posts.first.url }}">latest</a>{% else %}latest{% endif %}
+</p>
+
+<div class="post">
+{{ content }}
+</div>
