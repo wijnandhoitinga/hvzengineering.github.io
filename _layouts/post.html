@@ -3,11 +3,11 @@ layout: default
 ---
 <p class="nav">
 {% if page.previous %}<a href="{{ page.previous.url }}">older</a>{% else %}older{% endif %}
-&bull;
+&middot;
 {{ page.date | date_to_string }}
-&bull;
+&middot;
 {% if page.next %}<a href="{{ page.next.url }}">newer</a>{% else %}newer{% endif %}
-&bull;
+&middot;
 {% if page.url != site.posts.first.url %}<a href="{{ site.posts.first.url }}">latest</a>{% else %}latest{% endif %}
 </p>
 
