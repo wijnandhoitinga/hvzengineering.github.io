@@ -49,42 +49,9 @@
     <div id="header_wrap" class="outer">
       <header class="inner">
         <h1>Hoitinga &middot; Van&nbsp;Zwieten</h1>
-        <h2>
-          <span class="sec">
-            <a href="/">home</a>
-            {% if page.title == "Home" %}
-              <span class="arrow-down"></span>
-            {% endif %}
-          </span>
-          <span class="sep">&middot;</span>
-          <span class="sec">
-            <a href="/whatwedo.html">what&nbsp;we&nbsp;do</a>
-            {% if page.title == "What we do" %}
-              <span class="arrow-down"></span>
-            {% endif %}
-          </span>
-          <span class="sep">&middot;</span>
-          <span class="sec">
-            <a href="/whoweare.html">who&nbsp;we&nbsp;are</a>
-            {% if page.title == "Who we are" %}
-              <span class="arrow-down"></span>
-            {% endif %}
-          </span>
-          <span class="sep">&middot;</span>
-          <span class="sec">
-            <a href="/references.html">references</a>
-            {% if page.title == "References" %}
-              <span class="arrow-down"></span>
-            {% endif %}
-          </span>
-          <span class="sep">&middot;</span>
-          <span class="sec">
-            <a href="/contact.html">contact</a>
-            {% if page.title == "Contact" %}
-              <span class="arrow-down"></span>
-            {% endif %}
-          </span>
-        </h2>
+        <div id="tabbar">
+          <a href="/" {% if page.title == "Home" %}class="select"{% endif %}>home</a><a href="/whatwedo.html" {% if page.title == "What we do" %}class="select"{% endif %}>what&nbsp;we&nbsp;do</a><a href="/whoweare.html" {% if page.title == "Who we are" %}class="select"{% endif %}>who&nbsp;we&nbsp;are</a><a href="/references.html" {% if page.title == "References" %}class="select"{% endif %}>references</a><a href="/contact.html" {% if page.title == "Contact" %}class="select"{% endif %}>contact</a></h2>
+        </div>
       </header>
     </div>
     <div id="main_content_wrap" class="outer">
