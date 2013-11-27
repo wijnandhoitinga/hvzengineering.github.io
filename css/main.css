@@ -13,7 +13,7 @@ body {
   font-size: small;
   font-family: Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
-  background: #222;
+  background: #222 url(/images/hvzlogo.png) right top no-repeat;
   color: #eee;
 }
 
@@ -41,7 +41,7 @@ a {
 
 #header_wrap h1 {
   font-size: 40px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 #tabbar {
@@ -105,6 +105,7 @@ code {
 img.photo {
   width: 80pt;
   border-radius: 10pt;
+  border: 1px solid #ccc;
 }
 
 img.portfoliologo {
