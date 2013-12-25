@@ -6,43 +6,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="/css/main.css">
-    <title>HvZ {{ page.title }}</title>
-  <script type="text/javascript" language="JavaScript">
-    gen_onclick = function( style ) {
-      return function() {
-        if ( style.display == "none" ) {
-          style.display = "block";
-          this.innerHTML = "Less";
-        }
-        else {
-          style.display = "none";
-          this.innerHTML = "More";
-        }
-      };
-    };
-    window.onload = function() {
-      var more = document.getElementsByClassName( "more" );
-      previous = null;
-      for ( var i = 0; i < more.length; i++ ) {
-        more[i].style.display = "none";
-        var newp = document.createElement( "p" );
-        var newa = document.createElement( "a" );
-        newa.setAttribute( "href", "javascript:;" );
-        for ( var m = more[i]; m != previous; m = m.previousSibling ) {
-          if ( m.id ) {
-            newa.setAttribute( "href", "#" + m.id );
-            break;
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: { inlineMath: [['`','`']], displayMath: [['``','``']] },
+        TeX: { equationNumbers: {autoNumber: "all"} },
+      });
+    </script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', '{{ site.google_id }}', '{{ site.domain }}');
+      ga('send', 'pageview');
+    </script>
+    <script type="text/javascript" language="JavaScript">
+      gen_onclick = function( style ) {
+        return function() {
+          if ( style.display == "none" ) {
+            style.display = "block";
+            this.innerHTML = "Less";
           }
+          else {
+            style.display = "none";
+            this.innerHTML = "More";
+          }
+        };
+      };
+      window.onload = function() {
+        var more = document.getElementsByClassName( "more" );
+        previous = null;
+        for ( var i = 0; i < more.length; i++ ) {
+          more[i].style.display = "none";
+          var newp = document.createElement( "p" );
+          var newa = document.createElement( "a" );
+          newa.setAttribute( "href", "javascript:;" );
+          for ( var m = more[i]; m != previous; m = m.previousSibling ) {
+            if ( m.id ) {
+              newa.setAttribute( "href", "#" + m.id );
+              break;
+            }
+          }
+          newa.innerHTML = "More";
+          newa.onclick = gen_onclick( more[i].style );
+          newp.appendChild( newa );
+          more[i].parentNode.insertBefore( newp, more[i].nextSibling );
+          previous = more[i];
         }
-        newa.innerHTML = "More";
-        newa.onclick = gen_onclick( more[i].style );
-        newp.appendChild( newa );
-        more[i].parentNode.insertBefore( newp, more[i].nextSibling );
-        previous = more[i];
-      }
-      console.log( "everything loaded" );
-    };
-  </script>
+        console.log( "everything loaded" );
+      };
+    </script>
+    <title>HvZ {{ page.title }}</title>
   </head>
   <body>
     <img src="/images/hvzlogo.png" class="floatright">
@@ -50,7 +65,9 @@
       <header class="inner">
         <h1>Hoitinga &middot; van&nbsp;Zwieten</h1>
         <div id="tabbar">
-          <a href="/" {% if page.title == "Home" %}class="select"{% endif %}>home</a><a href="/whatwedo.html" {% if page.title == "What we do" %}class="select"{% endif %}>what&nbsp;we&nbsp;do</a><a href="/whoweare.html" {% if page.title == "Who we are" %}class="select"{% endif %}>who&nbsp;we&nbsp;are</a><a href="/references.html" {% if page.title == "References" %}class="select"{% endif %}>references</a><a href="/contact.html" {% if page.title == "Contact" %}class="select"{% endif %}>contact</a></h2>
+        {% for tab in site.tabs %}<a href="{{ tab.url }}" {% if page.title == tab.title %}class="select"{% endif %}>
+          {{ tab.title | downcase }}
+        </a>{% endfor %}
         </div>
       </header>
     </div>

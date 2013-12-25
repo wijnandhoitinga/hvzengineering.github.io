@@ -13,7 +13,7 @@ body {
   font-size: small;
   font-family: Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
-  background-color: #222;
+  background: #222;
   color: #eee;
 }
 
@@ -41,7 +41,7 @@ a {
 
 #header_wrap h1 {
   font-size: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 #tabbar {
@@ -60,6 +60,24 @@ a {
 #tabbar a.select {
   background-color: #eee;
   color: #222;
+}
+
+#forkme_banner {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  z-index: 10;
+  padding: 10px 50px 10px 10px;
+  background: url('../images/blacktocat.png') #0090ff no-repeat 95% 50%;
+  font-weight: 700;
+  box-shadow: 0 0 10px rgba(0,0,0,.5);
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+#forkme_banner a {
+  color: inherit;
 }
 
 /***( MAIN CONTENT )***/
@@ -105,7 +123,6 @@ code {
 img.photo {
   width: 80pt;
   border-radius: 10pt;
-  border: 1px solid #ccc;
 }
 
 img.portfoliologo {
@@ -116,4 +133,10 @@ img.portfoliologo {
 .inline {
   display: inline-block;
   vertical-align: middle;
+}
+
+.exerpt {
+  margin-top: -10px;
+  padding-top: 0px;
+  padding-left: 30px;
 }

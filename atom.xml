@@ -3,31 +3,28 @@ layout: nil
 ---
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
- 
-  <title>HvZ Computational Engineering</title>
-  <link href="http://hvzengineering.nl/"/>
-  <link type="application/atom+xml" rel="self" href="http://hvzengineering.nl/atom.xml"/>
+  <title>{{ site.name }}</title>
+  <link href="http://{{ site.domain }}/"/>
+  <link type="application/atom+xml" rel="self" href="http://{{ site.domain }}/atom.xml"/>
   <updated>{{ site.time | date_to_xmlschema }}</updated>
-  <id>http://hvzengineering.nl/</id>
+  <id>http://gjvz.nl/</id>
   <author>
-    <name>HvZ Computational Engineering</name>
-    <email>info@hvzengineering.nl</email>
-    <uri>http://hvzengineering.nl/</uri>
+    <name>{{ site.author }}</name>
+    <email>{{ site.email }}</email>
+    <uri>http://{{ site.domain }}/</uri>
   </author>
-
   {% for post in site.posts %}
   <entry>
-    <id>http://hvzengineering.nl{{ post.id }}</id>
-    <link type="text/html" rel="alternate" href="http://hvzengineering.nl{{ post.url }}"/>
+    <id>http://{{ site.domain }}{{ post.id }}</id>
+    <link type="text/html" rel="alternate" href="http://{{ site.domain }}{{ post.url }}"/>
     <title>{{ post.title | xml_escape }}</title>
     <updated>{{ post.date | date_to_xmlschema }}</updated>
     <author>
-      <name>HvZ Computational Engineering</name>
-      <email>info@hvzengineering.nl</email>
-      <uri>http://hvzengineering.nl/</uri>
+      <name>{{ site.author }}</name>
+      <email>{{ site.email }}</email>
+      <uri>http://{{ site.domain }}/</uri>
     </author>
     <content type="html">{{ post.content | xml_escape }}</content>
   </entry>
   {% endfor %}
- 
 </feed>
