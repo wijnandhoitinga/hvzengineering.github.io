@@ -57,13 +57,13 @@
         console.log( "everything loaded" );
       };
     </script>
-    <title>HvZ {{ page.title }}</title>
+    <title>{{ site.shortname }} {{ page.title }}</title>
   </head>
   <body>
     <img src="/images/hvzlogo.png" class="floatright">
     <div id="header_wrap" class="outer">
       <header class="inner">
-        <h1>Hoitinga &middot; van&nbsp;Zwieten</h1>
+        <h1>{{ site.name }}</h1>
         <div id="tabbar">
         {% for tab in site.tabs %}<a href="{{ tab.url }}" {% if page.title == tab.title %}class="select"{% endif %}>
           {{ tab.title | downcase }}

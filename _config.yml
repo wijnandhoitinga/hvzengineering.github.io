@@ -1,8 +1,9 @@
-name: GJvZ web dump
-author: Gertjan van Zwieten
-email: gertjanvanzwieten@gmail.com
-domain: gjvz.nl
-google_id: UA-42595236-1
+name: Hoitinga · van Zwieten
+shortname: HvZ
+author: HvZ Engineering
+email: info@hvzengineering.nl
+domain: hvzengineering.nl
+google_id: none
 
 markdown: redcarpet
 pygments: true
