@@ -3,6 +3,7 @@ shortname: HvZ
 author: HvZ Engineering
 email: info@hvzengineering.nl
 domain: hvzengineering.nl
+github: hvzengineering
 
 markdown: redcarpet
 pygments: true
