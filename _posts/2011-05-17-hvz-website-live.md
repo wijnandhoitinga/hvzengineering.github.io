@@ -1,6 +1,7 @@
 ---
 layout: post
 title: HvZ website goes live!
+tags: news
 ---
 
 After showing a "website in progress" sign for too long, we are very proud to

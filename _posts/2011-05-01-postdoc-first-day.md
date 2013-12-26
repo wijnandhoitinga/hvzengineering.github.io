@@ -1,6 +1,7 @@
 ---
 layout: post
 title: First day post-doc at TU Eindhoven
+tags: news
 ---
 
 To extend our fields of expertise and consolidate our ties

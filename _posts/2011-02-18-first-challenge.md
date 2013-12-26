@@ -1,6 +1,7 @@
 ---
 layout: post
 title: First challenge
+tags: news
 ---
 
 Today Innecs agreed to let HvZ do modeling work on a 250 kW

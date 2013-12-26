@@ -1,6 +1,7 @@
 ---
 layout: post
 title: HvZ and ASML agree on terms for a long-term project!
+tags: news
 ---
 
 In a joint meeting of Hvz, Mecal, and ASML, we discussed

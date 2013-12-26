@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Visit to ASML
+tags: news
 ---
 
 Together with ASML and Inviscid we discussed possible

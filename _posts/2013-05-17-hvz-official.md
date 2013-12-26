@@ -1,6 +1,7 @@
 ---
 layout: post
 title: HvZ goes official
+tags: news
 ---
 
 We are very happy to announce that today HvZ Computational Engineering was

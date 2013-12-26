@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Final presentation at Innecs
+tags: news
 ---
 
 Today HvZ presents the final results of the software tool
