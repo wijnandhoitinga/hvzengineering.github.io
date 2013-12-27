@@ -1,6 +1,6 @@
 ---
 layout: post
-title: HvZ and ASML agree on terms for a long-term project!
+title: ASML, Mecal and HvZ discuss a possible cooperation
 tags: news
 ---
 
