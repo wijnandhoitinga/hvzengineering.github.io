@@ -3,6 +3,7 @@ shortname: HvZ
 author: HvZ Engineering
 email: info@hvzengineering.nl
 domain: hvzengineering.nl
+google_id: UA-23442799-1
 github: hvzengineering
 
 markdown: redcarpet
@@ -21,3 +22,5 @@ tabs:
     url: /references.html
   - title: Contact
     url: /contact.html
+
+scripts: google_analytics
