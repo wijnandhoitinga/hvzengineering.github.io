@@ -1,4 +1,4 @@
-name: Hoitinga · van Zwieten
+name: Hoitinga · van Zwieten Computational Engineering
 shortname: HvZ
 author: HvZ Engineering
 email: info@hvzengineering.nl
@@ -14,12 +14,12 @@ permalink: none
 tabs:
   - title: Home
     url: /
-  - title: What we do
-    url: /whatwedo.html
-  - title: Who we are
-    url: /whoweare.html
+  - title: About
+    url: /about.html
   - title: References
     url: /references.html
+  - title: Testimonials
+    url: /testimonials.html
   - title: Contact
     url: /contact.html
 

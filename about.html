@@ -1,0 +1,173 @@
+---
+layout: default
+title: HvZ Computational Engineering
+scripts: less_more
+---
+
+<h3 id="introduction">Introduction</h3>
+
+<p>Hoitinga van Zwieten (HvZ) Computational Engineering is a young
+consultancy company with expertise in computer simulation of physical processes.
+Examples of such processes are the thermo-mechanical deformation of solid structures, 
+multiphase fluid flows, and fluid-structure interaction.
+Computer simulation physics is increasingly gaining importance and is currently an essential part in the designing phase 
+of any product. </p>
+
+<div class="more">
+
+<img src="images/liddriven.png" height="20%" width="60%" align="left" hspace="30" vspace="30" />
+
+<p> To simulate physics one requires a large set of skills.
+To start one must be able to translate physics to mathematical model equations (<em>physics, mathermatics</em>). 
+The model equations are then transformed such that they can be solved by a computer (<em>numerical mathematics</em>) and,
+subsequently, a computer must be instructed on how to solve the often large systems of equations (<em>linear algebra, computer programming</em>).
+Finally, a solution to the model equations must be properly visualized and analysed. 
+It requires years of study before one is able to set up a proper simulation.
+</p>
+
+
+<p>The constrained on study resulted in separation of expertise. 
+This resulted in the foundation of companies that develop simulation-software, often with a focus on specific physics. 
+For instance, there now exist software tools that contain only models associated with fluid dynamics or only solid mechanics.
+Other companies were created that specialized in using these - usually expensive - software tools to advise and help clients in their design process.
+</p>
+
+<img src="images/frame036.jpg" height="20%" width="60%" align="right" hspace="30" vspace="30" />
+
+<p>
+At HvZ we believe that no physics problem is identical and, therefore, always requires dedicated attention. 
+That is, each problem requires a complete analysis of the physics and mathematics, proper choice of numerical methods and tailored software tools. 
+This is not always possible using generic tools, in particular not when the physics problem is not restricted to a single field, i.e., 
+one often has to deal with fluids interacting with solids (<em>fluid-structure intereaction</em>) or thermal behaviour (<em>heat flow</em>) resulting in mechanical deformation (<em>thermo-mechanics</em>).
+Many tools cannot handle such complicated mixture of different problems.
+However, because HvZ possess all necessary expertise to conduct proper computer simulation of multi-physics problems, it enables them to help clients with their specific needs if it comes to multi-physics problems.
+</p>
+
+</div>
+
+<h3 id="wayofworking">Way of Working</h3>
+
+<p>HvZ is specialized in design of tailored simulation solutions in a design.
+A design is not restricted to the manufacturing of products, but also includes production processes.
+An example where HvZ plays an important role is the implementation of specially designed simulation tools on lithography tools to improve 
+the performance of chip manufacturing. 
+In general, when HvZ is asked to design a computer simulation for a client, the following steps are followed.
+</p>
+
+<div class="more">
+
+
+<p><b>Step 1</b> 
+The first step is to discuss the problem with the client and to derive/determine the appropriate model equations.
+Based on what a client explains, HvZ formulates a model problem, explains its range of applicability and limitations.
+It is not expected nor is it necessarily that a client has a mathematical background.
+The aim in this phase is to obtain a thorough understanding of the issues at hand and, moreover, 
+what questions need to be answered by means of computer simulation. 
+</p>
+<img src="images/step.png" height="20%" width="30%" align="bottom" hspace="30" vspace="30" />
+
+<p><b>Step 2</b> 
+After the aforementioned step, HvZ has sufficient information to start working on the design of a computer simulation.
+Regular updates and meetings ensure a converging process towards a satisfying result. 
+Once the simulations are available HvZ presents their findings.
+</p>
+<img src="images/step.png" height="20%" width="30%" align="bottom" hspace="30" vspace="30" />
+
+<p><b>Step 3</b> 
+Once the client is satisfied with the results the project is finished. 
+HvZ develops their own software tools for computer simulation.
+These tools, known as <em>Nutils</em>, are open source and therefore free to use. 
+If a client has interest in recomputing the results they are free to obtain the tool.
+This can be an interesting option to, e.g., conduct parameter studies to obtain further insight.
+HvZ can help with a short training on the software and can even provide a simple user interface. 
+</p>
+<img src="images/step.png" height="20%" width="30%" align="bottom" hspace="30" vspace="30" />
+
+
+</div>
+
+
+<h3 id="nutils">The Nutils project (software)</h3>
+<p>
+
+HvZ develops dedicated software tools that can be licenced to the client at
+request. These are typically specific tools for a given task, though with as
+many buttons as desired for the design process. For example, the software can be
+specific for computing the temperature distribution in a pipe, but may allow the
+thickness and inlet temperature to vary to examine the effect.
+The set of requirements and desired flexibility of the tool will be discussed at
+project intake, where it is our expertise to translate a set of engineering
+demands to software requirements.</p>
+
+<img src="images/nutils.png" height="20%" width="80%" align="bottom" hspace="30" vspace="30" />
+
+<div class="more">
+
+<p>
+
+
+HvZ builds on a long experience of developing numerical software. As a
+result, rather than writing every new program from scratch, we can reuse
+components that have been developed over the years. This results in rapid
+development, as typically only the problem-specific layer needs to be
+implemented. Further, by building on mature components, the software will be stable
+and fast. Regarding accuracy, note that we take pride in always verifying our
+results against the <a href="whatwedo_modeling.html">mathematics</a>. Furthermore,
+we note that at HvZ we invest in developing the latest numerical methods for best results.</p>
+
+<p>Although we are comfortable to work with any computer language, our language
+of choice is <a href="http://www.python.org" target="_blank">Python</a>, for
+four primary reasons:
+</p>
+
+<ol>
+<li>The fact that it is free, which results in a significant cost benefit for
+our clients.</li>
+<li>Its focus on readability, which directly benefits both ourselves and our
+clients.</li>
+<li>Its high level nature, which allows for rapid development without low level
+distractions, but with the possibility for low level optimizations where
+necessary.</li>
+<li>The wealth of modules, both scientific and otherwise, that are being created
+and maintained by the world wide open source community.</li>
+</ol>
+
+<p>The last group is one that we at HvZ are most obliged to, and we recognize
+that our work would not be possible without the hard work of others. HvZ
+believes firmly in the future of open source, and would like to make its
+contribution by disclosing all non-problem specific source code to benefit the
+community. As yet, a lot of work still needs to be done to prepare for this
+step, but a first version is expected in the third quarter of 2011. We are
+excited about this and look forward to working closely with the community!</p>
+
+</div>
+
+
+<h3 id="examples">Examples</h3>
+
+<p>To get an idea on how HvZ can help with your virtual product design, consider
+the following examples:</p>
+
+<div class="more">
+
+<ul>
+<li>Engineering applications that contain <em>tribology</em> aspects. Think of
+lubrication and friction, air bearings, oil bearings, and applications that
+contain thin-film fluids.</li>
+<li>Heat-transfer related problems, such as conditioning of system components
+and dimensioning of heating/cooling systems.</li>
+<li>Fluid flow related problems.</li>
+<li>Deformation and stress computations of constructions (solid
+mechanics).</li>
+<li>Coupled problems, e.g. heat-transfer and fluid flow or fluid-structure
+interaction.</li>
+</ul>
+
+<p>The mathematical and numerical background enables HvZ to quickly understand
+many other types of problems. Do not hesitate to <a
+href="contact.html">contact</a> HvZ and ask whether the issues regarding your
+virtual design can be addressed as well. In addition, we emphasize that HvZ is
+not restricted to off site work only. If preferred, HvZ can help on site and
+assist in generic design engineering tasks.</p>
+
+</div>
