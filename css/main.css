@@ -27,9 +27,19 @@ header, nav, section, footer {
   max-width: 600px;
 }
 
+header {
+  max-width: 854px; /* 127 px offset for logo */
+}
+
 header h1 {
   font-size: 40px;
   margin-bottom: 25px;
+}
+
+header h1 img {
+  vertical-align: middle;
+  float: left;
+  padding-right: 10px;
 }
 
 nav {
