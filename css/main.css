@@ -116,6 +116,7 @@ code {
 }
 
 .floatright {
+  clear: right;
   float: right;
 }
 
@@ -131,7 +132,18 @@ img.photo {
 
 img.portfoliologo {
   width: 80pt;
-  padding: 25pt 0pt;
+}
+
+a.floatbox {
+  float: right;
+  clear: right;
+  border: solid 1px;
+  text-align: center;
+  padding: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  font-weight: normal;
+  font-size: small;
 }
 
 .inline {
