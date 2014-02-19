@@ -28,7 +28,7 @@ header, nav, section, footer {
 }
 
 header {
-  max-width: 854px; /* 127 px offset for logo */
+  max-width: 730px; /* 65 px offset for logo */
 }
 
 header h1 {
