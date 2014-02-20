@@ -4,119 +4,131 @@ title: About
 scripts: less_more
 ---
 
-<h2 id="about">About</h2>
+<p class="intro">Hoitinga & van Zwieten (HvZ) Computational Engineering is a
+young consultancy company specializing in computer simulation of physical
+processes; a field that is rapidly gaining interest. For good reason: when
+compared to real world testing, computer simulations are almost invariably
+cheaper, less time consuming, and more easily automated, and as such open the
+way to formerly infeasible practices such as exhaustive parameter searches and
+computer aided optimization. In close collaboration with academia, HvZ develops
+the simulation tools, and helps to implement them in industry to push this
+important development forward.</p>
 
-<p>Hoitinga & van Zwieten (HvZ) Computational Engineering is a young consultancy
-company with expertise in computer simulation of physical processes. Examples
-of such processes are the thermo-mechanical deformation of solid structures,
-multiphase fluid flows, and fluid-structure interaction. Computer simulation
-physics is increasingly gaining importance and is currently an essential part
-in the designing phase of any product.</p>
+<h3 id="expertise">Vision</h3>
+
+<div class="floatleft caption">
+<img src="images/cahnhilliard.png" style="width: 150px; border: solid 1px;"><br>
+Two-phase unmixing.
+</div>
+
+<p>Proper simulation of physics involves a distinct set of separate expertises.
+A fundamental understanding of the problem at hand is the realm of physics.
+Making the translation to the appropriate model description is a problem of
+mathematics, whereas setting up an algorithm to solve it is one of numerics.
+Finally, implementing the algorithm efficiently moves us to computer science.
+As a result, the only way that simulation results can be properly assessed for
+validity is with a firm background in all the fields combined.</p>
 
 <div class="more">
 
-<img src="images/liddriven.png" style="width: 40%; float: left; margin-right: 10px;">
+<p>Unfortunately, reality is predominantly one of separated expertise. On the
+corporate axis, we have companies specializing in software development on one
+end, and those licensing the black-box products for consultancy on the other.
+Another sharp divide happen across physics, with some software packages
+focussing heavily on solid mechanics, while others specialize exclusively in
+fluid dynamics, or any other niche market. While specialization promises some
+advantage of optimization, it largely precludes any form of interaction. Given
+that many practical problems are inherently multi-physics in nature, the
+present situation of divide-and-conquer is hampering progress, and even feeding
+scepticism about the practical use of computer simulations.</p>
 
-<p>To simulate physics one requires a large set of skills. To start one must be
-able to translate physics to mathematical model equations (<em>physics,
-mathermatics</em>). The model equations are then transformed such that they can
-be solved by a computer (<em>numerical mathematics</em>) and, subsequently, a
-computer must be instructed on how to solve the often large systems of
-equations (<em>linear algebra, computer programming</em>). Finally, a solution
-to the model equations must be properly visualized and analysed. It requires
-years of study before one is able to set up a proper simulation.</p>
+<div class="floatright caption">
+<img src="images/airfoil.png" style="width: 250px; border: solid 1px;"><br>
+Airflow over a NACA2412 airfoil.
+</div>
 
-
-<p>The constrained on study resulted in separation of expertise. This resulted
-in the foundation of companies that develop simulation-software, often with a
-focus on specific physics. For instance, there now exist software tools that
-contain only models associated with fluid dynamics or only solid mechanics.
-Other companies were created that specialized in using these - usually
-expensive - software tools to advise and help clients in their design
-process.</p>
-
-<img src="images/airfoil.png" style="width: 40%; float: right; margin-left: 10px;">
-
-<p>At HvZ we believe that no physics problem is identical and, therefore,
-always requires dedicated attention. That is, each problem requires a complete
-analysis of the physics and mathematics, proper choice of numerical methods and
-tailored software tools. This is not always possible using generic tools, in
-particular not when the physics problem is not restricted to a single field,
-i.e., one often has to deal with fluids interacting with solids
-(<em>fluid-structure intereaction</em>) or thermal behaviour (<em>heat
-flow</em>) resulting in mechanical deformation (<em>thermo-mechanics</em>).
-Many tools cannot handle such complicated mixture of different problems.
-However, because HvZ possess all necessary expertise to conduct proper computer
-simulation of multi-physics problems, it enables them to help clients with
-their specific needs if it comes to multi-physics problems.</p>
+<p>At HvZ we believe that no two problems are identical, and they will
+always require dedicated attention regarding physics, mathematics, numerical
+methods and software. The way forward is integration. With a solid expertise in
+all separate fields and a strong footing in academia, we envisage a closely
+targeted consult resulting in a proper choice of modern numerical methods and
+tailored software components, regardless the physics involved. As long as it is
+a rule based system, that means it is computable.</p>
 
 </div>
 
-<h3 id="wayofworking">Way of Working</h3>
+<h3 id="wayofworking">Way of working</h3>
 
-<p>HvZ is specialized in design of tailored simulation solutions in a design. A
-design is not restricted to the manufacturing of products, but also includes
-production processes. An example where HvZ plays an important role is the
-implementation of specially designed simulation tools on lithography tools to
-improve the performance of chip manufacturing. In general, when HvZ is asked to
-design a computer simulation for a client, the following steps are followed.</p>
+<p>HvZ specializes in the design of tailored simulation solutions. A simulation
+may describe a product manufacturing process, a production process, a
+computer-assisted feedback loop, or any process that involves a modelling
+component. Whatever the application, when HvZ is approached to design a
+computer simulation, the consultancy roughly proceeds in the following three
+steps.</p>
 
 <div class="more">
 
-<h4>1. Problem formulation</h4> 
+<ol>
 
-<p>The first step is to discuss the problem with the client and to
-derive/determine the appropriate model equations. Based on what a client
-explains, HvZ formulates a model problem, explains its range of applicability
-and limitations. It is not expected nor is it necessarily that a client has a
-mathematical background. The aim in this phase is to obtain a thorough
-understanding of the issues at hand and, moreover, what questions need to be
-answered by means of computer simulation.</p>
+<li><b>Problem formulation</b></li> 
 
-<h4>2. Implementation</h4> 
+<p>At project intake we discuss the problem and establish a clear set of
+questions that are to be answered by means of numerical simulation. Based on
+client input, HvZ proposes a model and explains its range of applicability and
+limitations in non-mathematical terms.</p>
 
-<p>After the aforementioned step, HvZ has sufficient information to start
-working on the design of a computer simulation. Regular updates and meetings
-ensure a converging process towards a satisfying result. Once the simulations
-are available HvZ presents their findings.</p>
 
-<h4>3. Analysis</h4> 
+<li><b>Implementation</b></li> 
 
-<p>Once the client is satisfied with the results the project is finished. HvZ
-develops their own software tools for computer simulation. These tools, known
-as <em>Nutils</em>, are open source and therefore free to use. If a client has
-interest in recomputing the results they are free to obtain the tool. This can
-be an interesting option to, e.g., conduct parameter studies to obtain further
-insight. HvZ can help with a short training on the software and can even
-provide a simple user interface.</p>
+<p>After agreeing upon the appropriate model description, HvZ will develop a
+simulation on top of the open source <a href="#nutils">Nutils</a>
+toolbox. Regular updates and meetings ensure a converging process towards
+satisfying results.</p>
+
+<li><b>Analysis</b></li> 
+
+<p>The end result is a tailored software product capable of real world
+simulation, which can be used for parameter studies, computer aided
+optimization, or any application specific purpose. HvZ can assist in this
+process or provide trainings to use this tool independently.</p>
+
+</ol>
 
 </div>
 
-<h3 id="nutils">
-<img src="images/nutils.png" style="float: right; width: 64px; padding-left: 10px;">
-The Nutils project (software)</h3>
+<h3 id="nutils">The Nutils project (software)</h3>
 
-<p>The <a href="http://nutils.org">Nutils</a> project is a collaboration
-between HvZ and the Multiscale Engineering Fluid Dynamics (MEFD) Group at
-Eindhoven University of Technology in which advanced, open source software
-tools are developed for complicated physics simulation. HvZ helps industry and
-research in applying and developing high end simulation methods, respectively,
-and the MEFD group provides HvZ with the latest, most advanced techniques in
-the field of computer simulation of physics.</p>
+<a href="http://nutils.org" class="linkbox floatright"><img src="images/nutils.png"><br>nutils.org</a>
+
+<p> HvZ builds on a long experience of developing numerical software, which in
+2013 led to the establishment of the <a href="http://nutils.org">Nutils</a>
+project; a collaboration between HvZ and the group of <a
+href="/references.html#tue">MEFD</a> at Eindhoven University of Technology. The
+project entails the development of an advanced, modern software framework for
+general physics simulation. HvZ plays a dominant role in the development of
+this software and provides consultancy regarding implementation issues. Providing an
+open test bed for academia, this symbiosis ensures HvZ a cutting edge in
+latest, most advanced techniques in the field of computer simulation of
+physics.</p>
 
 <div class="more">
 
-<p>
-HvZ develops dedicated software tools that can be licenced to the client at
-request. These are typically specific tools for a given task, though with as
-many buttons as desired for the design process. For example, the software can be
-specific for computing the temperature distribution in a pipe, but may allow the
-thickness and inlet temperature to vary to examine the effect.
-The set of requirements and desired flexibility of the tool will be discussed at
-project intake, where it is our expertise to translate a set of engineering
-demands to software requirements.</p>
-<p>
+<p>Nutils is developed exclusively using open source tools, in particular the
+<a href="http://python.org">Python</a> programming language, along with its
+wealth of modules, both scientific and otherwise, that are being created and
+maintained by the world wide open source community. It is a group that we at
+HvZ are much obliged to, and we recognize that our work would not be possible
+without the hard work of others. HvZ believes firmly in the future of open
+source, and hopes to make its contribution by disclosing all non-problem
+specific source code to benefit the community.</p>
 
+<p>Software that is developed at a client's request is by definition closed
+source, and can be licenced to the client at request. Unlike Nutils itself,
+these products are typically specific tools for a narrow task. The software can
+for example be limited to computing the temperature distribution in a pipe,
+though it may allow the thickness and inlet temperature to be varied to examine
+the effect. The desired flexibility of the tool is translated from engineering
+demands to software requirements at project intake.</p>
 
 </div>
 
