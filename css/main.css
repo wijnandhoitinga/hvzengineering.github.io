@@ -3,6 +3,10 @@ footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  clear: both;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -33,20 +37,17 @@ header {
 }
 
 header h1 {
-  margin-bottom: 25px;
+  padding-left: 127px;
+  text-indent: -137px;
+  line-height: 8px;
+  margin-bottom: 20px;
   font-size: 40px;
   font-weight: normal;
 }
 
 header h1 img {
   vertical-align: middle;
-  padding: 0 10px;
-}
-
-header h1 img {
-  vertical-align: middle;
-  float: left;
-  padding-right: 10px;
+  padding: 0 10px 10px 0;
 }
 
 nav {
