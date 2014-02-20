@@ -12,12 +12,10 @@ paginate: 5
 permalink: none
 
 tabs:
-  - title: Home
+  - title: News
     url: /
   - title: About
     url: /about.html
-  - title: Expertise
-    url: /expertise.html
   - title: References
     url: /references.html
   - title: Contact
