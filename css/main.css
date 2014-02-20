@@ -37,17 +37,14 @@ header {
 }
 
 header h1 {
-  padding-left: 127px;
-  text-indent: -137px;
-  line-height: 8px;
   margin-bottom: 20px;
   font-size: 40px;
   font-weight: normal;
 }
 
 header h1 img {
-  vertical-align: middle;
-  padding: 0 10px 10px 0;
+  float: left;
+  padding: 0 5px;
 }
 
 nav {
